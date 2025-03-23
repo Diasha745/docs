@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.13.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pacman: Класс SimpleBuilder</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(function() { init_search(); });
+/* @license-end */
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Pacman
+   </div>
+  </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.13.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_simple_builder.html',''); initResizable(true); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_simple_builder-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс SimpleBuilder</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_game_builders_8h_source.html">GameBuilders.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:SimpleBuilder:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_simple_builder.png" usemap="#SimpleBuilder_map" alt=""/>
+  <map id="SimpleBuilder_map" name="SimpleBuilder_map">
+<area href="class_common_builder.html" alt="CommonBuilder" shape="rect" coords="0,56,100,80"/>
+<area href="class_i_game_builder.html" alt="IGameBuilder" shape="rect" coords="0,0,100,24"/>
+  </map>
+</div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ad02dcc4d85cec356f6169ce938242226" id="r_ad02dcc4d85cec356f6169ce938242226"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad02dcc4d85cec356f6169ce938242226">create_rooms</a> () override</td></tr>
+<tr class="memdesc:ad02dcc4d85cec356f6169ce938242226"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаем все комнаты  <br /></td></tr>
+<tr class="separator:ad02dcc4d85cec356f6169ce938242226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1c6b39ff7d52a0f8cf811ef91d1feaa" id="r_aa1c6b39ff7d52a0f8cf811ef91d1feaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1c6b39ff7d52a0f8cf811ef91d1feaa">set_rooms_sides</a> () override</td></tr>
+<tr class="separator:aa1c6b39ff7d52a0f8cf811ef91d1feaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02bd852f1888116967ca1185e40bfba8" id="r_a02bd852f1888116967ca1185e40bfba8"><td class="memItemLeft" align="right" valign="top"><a id="a02bd852f1888116967ca1185e40bfba8" name="a02bd852f1888116967ca1185e40bfba8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CommonBuilder</b> (float width, float height, float room_size)</td></tr>
+<tr class="separator:a02bd852f1888116967ca1185e40bfba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_common_builder"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_class_common_builder')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_common_builder.html">CommonBuilder</a></td></tr>
+<tr class="memitem:a02bd852f1888116967ca1185e40bfba8 inherit pub_methods_class_common_builder" id="r_a02bd852f1888116967ca1185e40bfba8"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>CommonBuilder</b> (float width, float height, float room_size)</td></tr>
+<tr class="separator:a02bd852f1888116967ca1185e40bfba8 inherit pub_methods_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc49259b1bac0f3b4caf727babf68772 inherit pub_methods_class_common_builder" id="r_adc49259b1bac0f3b4caf727babf68772"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_common_builder.html#adc49259b1bac0f3b4caf727babf68772">create_context</a> (float static_objects_ratio, float dynamic_objects_ratio, int players) override</td></tr>
+<tr class="memdesc:adc49259b1bac0f3b4caf727babf68772 inherit pub_methods_class_common_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает контекст для игры  <br /></td></tr>
+<tr class="separator:adc49259b1bac0f3b4caf727babf68772 inherit pub_methods_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e45999e05a45814ed25ed3adbbe07e0 inherit pub_methods_class_common_builder" id="r_a4e45999e05a45814ed25ed3adbbe07e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_common_builder.html#a4e45999e05a45814ed25ed3adbbe07e0">create_state</a> (<a class="el" href="struct_i_state_manager.html">IStateManager</a> &amp;state_manager, const sf::VideoMode &amp;mode, const std::string &amp;window_title) override</td></tr>
+<tr class="memdesc:a4e45999e05a45814ed25ed3adbbe07e0 inherit pub_methods_class_common_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cоздаем состояние <a class="el" href="class_game_state.html" title="Взаимодействие врага с объектами лабиринта, что порождает игровые события">GameState</a>, используя имя, режим окна и сслыку на менеджер состояний  <br /></td></tr>
+<tr class="separator:a4e45999e05a45814ed25ed3adbbe07e0 inherit pub_methods_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae920c0a91e61aff620096c100e496da0 inherit pub_methods_class_common_builder" id="r_ae920c0a91e61aff620096c100e496da0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_common_builder.html#ae920c0a91e61aff620096c100e496da0">set_all_to_state</a> () override</td></tr>
+<tr class="memdesc:ae920c0a91e61aff620096c100e496da0 inherit pub_methods_class_common_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Созданный лабиринт и контекст назначаем созданному состоянию игры <a class="el" href="class_game_state.html" title="Взаимодействие врага с объектами лабиринта, что порождает игровые события">GameState</a>.  <br /></td></tr>
+<tr class="separator:ae920c0a91e61aff620096c100e496da0 inherit pub_methods_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafef8d08b8bfdfccfde6ff56bfb99987 inherit pub_methods_class_common_builder" id="r_aafef8d08b8bfdfccfde6ff56bfb99987"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_game_state.html">GameState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_common_builder.html#aafef8d08b8bfdfccfde6ff56bfb99987">get_game</a> () override</td></tr>
+<tr class="memdesc:aafef8d08b8bfdfccfde6ff56bfb99987 inherit pub_methods_class_common_builder"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получить результат строителя.  <br /></td></tr>
+<tr class="separator:aafef8d08b8bfdfccfde6ff56bfb99987 inherit pub_methods_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
+Дополнительные унаследованные члены</h2></td></tr>
+<tr class="inherit_header pro_attribs_class_common_builder"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pro_attribs_class_common_builder')"><img src="closed.png" alt="-"/>&#160;Защищенные данные унаследованные от <a class="el" href="class_common_builder.html">CommonBuilder</a></td></tr>
+<tr class="memitem:a21d4002b40948223e8e8fedf44a04b1a inherit pro_attribs_class_common_builder" id="r_a21d4002b40948223e8e8fedf44a04b1a"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_width</b></td></tr>
+<tr class="separator:a21d4002b40948223e8e8fedf44a04b1a inherit pro_attribs_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5552f46ab0d3ad530075981ead5746a inherit pro_attribs_class_common_builder" id="r_ac5552f46ab0d3ad530075981ead5746a"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_height</b></td></tr>
+<tr class="separator:ac5552f46ab0d3ad530075981ead5746a inherit pro_attribs_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bc23e74a5489c805205cf6d81d81ef3 inherit pro_attribs_class_common_builder" id="r_a1bc23e74a5489c805205cf6d81d81ef3"><td class="memItemLeft" align="right" valign="top">
+float&#160;</td><td class="memItemRight" valign="bottom"><b>m_room_size</b></td></tr>
+<tr class="separator:a1bc23e74a5489c805205cf6d81d81ef3 inherit pro_attribs_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48bbe8e10616593bf3f259240ba3f6e8 inherit pro_attribs_class_common_builder" id="r_a48bbe8e10616593bf3f259240ba3f6e8"><td class="memItemLeft" align="right" valign="top">
+std::vector&lt; std::vector&lt; <a class="el" href="class_room.html">Room</a> * &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_rooms</b></td></tr>
+<tr class="separator:a48bbe8e10616593bf3f259240ba3f6e8 inherit pro_attribs_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ab687d8edc6364c84975af07bff3c2 inherit pro_attribs_class_common_builder" id="r_a51ab687d8edc6364c84975af07bff3c2"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="struct_game_context.html">GameContext</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_context</b></td></tr>
+<tr class="separator:a51ab687d8edc6364c84975af07bff3c2 inherit pro_attribs_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47bb45f702c8b0848120670d4c7192da inherit pro_attribs_class_common_builder" id="r_a47bb45f702c8b0848120670d4c7192da"><td class="memItemLeft" align="right" valign="top">
+std::unique_ptr&lt; <a class="el" href="class_game_state.html">GameState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_game_state</b></td></tr>
+<tr class="separator:a47bb45f702c8b0848120670d4c7192da inherit pro_attribs_class_common_builder"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><blockquote class="doxtable">
+<p>простой строитель для уровней EASY и MEDIUM </p>
+</blockquote>
+</div><h2 class="groupheader">Методы</h2>
+<a id="ad02dcc4d85cec356f6169ce938242226" name="ad02dcc4d85cec356f6169ce938242226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad02dcc4d85cec356f6169ce938242226">&#9670;&#160;</a></span>create_rooms()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SimpleBuilder::create_rooms </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаем все комнаты </p>
+<p>Сетку комнат храним в классе <a class="el" href="class_common_builder.html">CommonBuilder</a> В <a class="el" href="class_simple_builder.html">SimpleBuilder</a> все возможное пространство заполняем комнатами. В <a class="el" href="#aa1c6b39ff7d52a0f8cf811ef91d1feaa">set_rooms_sides()</a> создаем проходы вправо/влево и вверх/вниз, стены делаем только на контуре. В <a class="el" href="class_complex_builder.html">ComplexBuilder</a> формирует "решетчатый" лабиринт по алгоритму Эллера </p>
+<blockquote class="doxtable">
+<p>слева "менюшка" и справа игра </p>
+</blockquote>
+
+<p>Замещает <a class="el" href="class_i_game_builder.html">IGameBuilder</a>.</p>
+
+</div>
+</div>
+<a id="aa1c6b39ff7d52a0f8cf811ef91d1feaa" name="aa1c6b39ff7d52a0f8cf811ef91d1feaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1c6b39ff7d52a0f8cf811ef91d1feaa">&#9670;&#160;</a></span>set_rooms_sides()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SimpleBuilder::set_rooms_sides </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<blockquote class="doxtable">
+<p>нулевая строка -&gt; создаем стену сверху </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>создаем проходы сверху и снизу </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>если строка в нулевом столбце -&gt; создаем стену слева </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>создаем проходы вправо и влево </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>если последняя строка -&gt; создаем стену снизу </p>
+</blockquote>
+<blockquote class="doxtable">
+<p>если комнаты в последнем столбце -&gt; создаем стену справа </p>
+</blockquote>
+
+<p>Замещает <a class="el" href="class_i_game_builder.html">IGameBuilder</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>source/application/BobBuilder/<a class="el" href="_game_builders_8h_source.html">GameBuilders.h</a></li>
+<li>source/application/BobBuilder/<b>GameBuilders.cpp</b></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_simple_builder.html">SimpleBuilder</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.13.2 </li>
+  </ul>
+</div>
+</body>
+</html>
